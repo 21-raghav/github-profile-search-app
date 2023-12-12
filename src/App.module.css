@@ -1,0 +1,27 @@
+.dark {
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(0, 0%, 100%);
+  --bg-primary: hsl(220,40%,13%);
+  --bg-secondary: hsl(222,41%,20%);
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+.container {
+  width: 327px;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+}
+@media (min-width: 768px) {
+  .container {
+    width: 573px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 730px;
+  }
+}
+
