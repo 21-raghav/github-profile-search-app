@@ -6,6 +6,7 @@ import UserProfile from "./components/UserProfile";
 
 import styles from "./App.module.css";
 
+// Initially displayed user
 const DEMO_USER = {
   avatar_url: "./assets/octocat.png",
   name: "The Octocat",
@@ -23,23 +24,23 @@ const DEMO_USER = {
 
 const App = () => {
   const [userProfile, setUserProfile] = useState(DEMO_USER);
-  const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState("");
 
-  function getProfileData(userData) {
+  function userData(userData) {
     setUserProfile(userData);
   }
 
-  function getTheme(newTheme) {
+  function updatedTheme(newTheme) {
     setTheme(newTheme);
   }
 
   return (
     <div className={`${styles.wrapper} ${styles[theme]}`}>
-    <div className={`${styles.container}`}>
-      <Header theme={theme} themeChange={getTheme}/>
-      <SearchBar profileData={getProfileData} />
-      <UserProfile data={userProfile} />
-    </div>
+      <div className={`${styles.container}`}>
+        <Header theme={theme} themeChange={updatedTheme} />
+        <SearchBar profileData={userData} />
+        <UserProfile data={userProfile} />
+      </div>
     </div>
   );
 };

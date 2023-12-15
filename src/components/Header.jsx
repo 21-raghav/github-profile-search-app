@@ -13,7 +13,7 @@ const Header = ({theme, themeChange}) => {
   return (
     <header className={`${styles.container}`}>
       <h1>devfinder</h1>
-      <button onClick={handleClick} className={styles["mode-btn"]}>
+      <button onClick={handleClick} className={styles["theme-btn"]}>
         {theme === "" ? "DARK" : "LIGHT"}&emsp;
         <img src={theme === "" ? "../assets/icon-moon.svg" : "../assets/icon-sun.svg"} alt="theme icon" />
       </button>

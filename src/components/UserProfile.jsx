@@ -5,7 +5,7 @@ import styles from "./UserProfile.module.css";
 
 const UserProfile = ({ data }) => {
   let noUserFound = false;
-  let joiningDate;
+  // check if user exists
   if (data.message === "Not Found") {
     noUserFound = !noUserFound;
     return (
@@ -14,9 +14,12 @@ const UserProfile = ({ data }) => {
       </Card>
     );
   }
+  // date format in luxon API
+  let joiningDate;
   joiningDate = DateTime.fromISO(data.created_at).toLocaleString(
     DateTime.DATE_MED
   );
+
   return (
     <Card className={styles["profile-wrapper"]}>
       <div className={styles["profile-header"]}>
