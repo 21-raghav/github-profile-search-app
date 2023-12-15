@@ -25,8 +25,8 @@ A User is able to:
 
 ### Screenshot
 
-![](./screenshot-light.png)
-![](./screenshot-dark.png)
+![](./Screenshot-light.png)
+![](./Screenshot-dark.png)
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 ### Links
