@@ -32,7 +32,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ### Links
 
 - Solution URL: [Github](https://github.com/21-raghav/github-profile-search-app)
-- Live Site URL: [Live Site](https://github-profile-search-apprs.firebaseapp.com/)
+- Live Site URL: [Live Site](https://github-profile-search-app-rosy.vercel.app/)
 
 ## My process
 
